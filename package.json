@@ -1,0 +1,102 @@
+{
+  "name": "wouter",
+  "version": "3.0.0-rc.1.1",
+  "description": "Minimalist-friendly ~1.5KB router for React",
+  "type": "module",
+  "keywords": [
+    "react",
+    "preact",
+    "router",
+    "tiny",
+    "routing",
+    "hooks",
+    "useLocation"
+  ],
+  "files": [
+    "esm",
+    "types/**/*.d.ts",
+    "types/*.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./esm/index.js"
+    },
+    "./use-browser-location": {
+      "types": "./types/use-browser-location.d.ts",
+      "default": "./esm/use-browser-location.js"
+    },
+    "./use-hash-location": {
+      "types": "./types/use-hash-location.d.ts",
+      "default": "./esm/use-hash-location.js"
+    },
+    "./memory-location": {
+      "types": "./types/memory-location.d.ts",
+      "default": "./esm/memory-location.js"
+    }
+  },
+  "types": "types/index.d.ts",
+  "typesVersions": {
+    ">=4.1": {
+      "types/index.d.ts": [
+        "types/index.d.ts"
+      ],
+      "use-browser-location": [
+        "types/use-browser-location.d.ts"
+      ],
+      "use-hash-location": [
+        "types/use-hash-location.d.ts"
+      ],
+      "memory-location": [
+        "types/memory-location.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "author": "Alexey Taktarov <molefrog@gmail.com>",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "mitt": "^3.0.1",
+    "regexparam": "^2.0.1",
+    "rollup": "^4.6.1",
+    "use-sync-external-store": "^1.0.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@size-limit/preset-small-lib": "^10.0.1",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@types/babel__core": "^7.20.2",
+    "@types/react": "^18.2.0",
+    "@types/react-test-renderer": "^18.0.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "@vitest/coverage-v8": "^0.34.3",
+    "concurrently": "^8.2.1",
+    "copyfiles": "^2.4.1",
+    "eslint": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.0",
+    "jsdom": "^22.1.0",
+    "path-to-regexp": "^6.2.1",
+    "preact": "^10.0.0",
+    "preact-render-to-string": "^6.0.3",
+    "prettier": "^2.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^3.7.4",
+    "size-limit": "^10.0.1",
+    "typescript": "5.2.2",
+    "vitest": "^0.34.6"
+  }
+}
